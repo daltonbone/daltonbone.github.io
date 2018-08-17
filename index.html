@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
-<title>COMING SOON</title>
+<title>Welcome to my life.</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="main.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1 {
@@ -17,20 +18,77 @@ body, html {height: 100%}
     background-position: center;
     background-size: cover;
 }
+.icons {
+    border: none;
+    color: white;
+    opacity: 0.5;
+    transition: 0.3s;   
+        
+    }
+.icons:hover {
+        
+    opacity: 1;
+    
+    }
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
 </style>
 <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Projects</a>
+  <a href="#">Contact</a>
+  <a href="#">COMING SOON</a>
+</div>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white main">
   <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    COMING SOON
+    <img src = "">
+      <span onclick="openNav()"><a href = "#"><img src = "menu.png" width="64" height="64"></a></span>
   </div>
   <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">My Portfolio.</h1>
-    <hr class="w3-border-grey" style="margin:auto; width:50%">
-      <p class="w3-large w3-center">COMING SOON</p>
+    <h1 class="w3-jumbo w3-center w3-animate-top">My Portfolio.</h1>
+    <hr class="w3-border-grey w3-animate-top" style="margin:auto; width:50%">
+      <p class="w3-large w3-center w3-animate-bottom">My name is Dalton Bone and I'm a Software Developer.</p>
   </div>
   <div class="w3-display-bottomleft w3-padding-large">
-    
+    <a href = "https://www.instagram.com/daltonjbone/"><img class = "icons" src = "instagram.png" width = "32px" height = "32px"></a>
+    <a href = "#"><img class = "icons" src = "twitter.png" width = "32px" height = "32px"></a>
+    <a href = "https://www.twitch.tv/dalt0id"><img class = "icons" src = "twitch.png" width = "32px" height = "32px"></a>
+    <a href = "#"><img class = "icons" src = "discord.png" width = "32px" height = "32px"></a>
   </div>
 </div>
 
