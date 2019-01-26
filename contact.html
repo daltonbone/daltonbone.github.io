@@ -13,9 +13,26 @@
 </label>
     </p>
 <p>
-<label>Comments 
+<label>Comments
 <textarea name="comments" maxlength="500"></textarea>
 </label>
 </p>
 <p><button>Submit</button></p>
 </form>
+<script>
+  function saveToFirebase(email) {
+      var emailObject = {
+          email: email
+      };
+  
+      firebase.database().ref('forums').push().set(emailObject)
+          .then(function(snapshot) {
+              success(); // some success method
+          }, function(error) {
+              console.log('error' + error);
+              error(); // some error method
+          });
+  }
+
+  saveToFirebase(email);
+</script>
