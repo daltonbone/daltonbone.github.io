@@ -79,6 +79,19 @@ body, html {height: 100%}
 }
 </style>
 <body>
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAYx0Vc2Ys96CxTwiOnMkF8jolqodpvXW8",
+    authDomain: "daltonbone-me.firebaseapp.com",
+    databaseURL: "https://daltonbone-me.firebaseio.com",
+    projectId: "daltonbone-me",
+    storageBucket: "",
+    messagingSenderId: "893819161906"
+  };
+  firebase.initializeApp(config);
+</script>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">About</a>
